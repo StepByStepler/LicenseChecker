@@ -1,0 +1,12 @@
+<%= form_with url: licenses_add_url, method: :get do |f| %>
+  <%= f.label :paid_till %>
+  <%= f.text_field :paid_till %>
+  <br>
+  <%= f.label :min_version %>
+  <%= f.text_field :min_version %>
+  <br>
+  <%= f.label :max_version %>
+  <%= f.text_field :max_version %>
+  <br>
+  <%= f.submit %>
+<% end %>
